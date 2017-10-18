@@ -23,6 +23,20 @@ $ cd ns-allinone-2.35
 $ ./install
 ```
 
+## Simulation, Workload and Data Processing Scripts
+Simulation scripts are contained in scripts/ folder. It runs in a simple testing scenario: EAR protocol with the web search workload under a 3-level fattree. Two publicly available workloads are also added in scripts/cdf folder.
+
+Run basic simulation.
+```
+$ ns scripts/fattree_empirical.tcl
+```
+
+The simple testing simulation finishes in ~5 minutes. track.tr and flow.tr are generated as the results.
+
+For data processing, you can use result.py to parse flow.tr file as follows:
+```
+$ python result.py flow.tr
+```
 
 ## Contact
 If you have any question about EAR simulation code, please contact [Gaoxiong Zeng](http://gaoxiongzeng.github.io/).
