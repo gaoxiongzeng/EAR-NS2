@@ -5,8 +5,8 @@ set link_rate 10; #10Gbps
 set mean_link_delay 0.000001; #1us
 set host_delay 0.000020; #20us
 
-set fattree_level 4;
-set fattree_k 6;
+set fattree_level 3;
+set fattree_k 4;
 set topology_x 2; # oversubcription
 
 set flowlog [open "flow.tr" w]
@@ -14,7 +14,7 @@ set tracklog [open "track.tr" w]
 set track_sample_interval 0.01
 set debug_mode 0
 set sim_start [clock seconds]
-set flow_tot 30000; #total number of flows to generate
+set flow_tot 10000; #total number of flows to generate
 set flow_gen 0; #the number of flows that have been generated
 set flow_fin 0; #the number of flows that have finished
 
@@ -22,7 +22,7 @@ set flow_cdf flow_cdf.tcl
 set mean_flow_size 1711250
 
 set connections_per_pair 3
-set core_load 0.9
+set core_load 0.8
 set p [expr int($fattree_k / 2)]
 set topology_intermediate [expr int(2 * pow($p, ($fattree_level - 1)))] ; # 2*p^(L-1)
 set inter_traffic_ratio [expr ($topology_intermediate - 1.0) / $topology_intermediate]
