@@ -24,7 +24,7 @@ $ ./install
 ```
 
 ## Simulation, Workload and Data Processing Scripts
-Simulation scripts are contained in scripts/ folder. It runs in a simple testing scenario: EAR protocol with the web search workload under a 3-level fattree. Two publicly available workloads are also added in scripts/cdf folder.
+Simulation scripts are contained in scripts/ folder. It runs in a simple testing scenario: EAR protocol with the web search workload under a 3-level fattree. Two publicly available workloads are also added in scripts/cdf/ folder.
 
 Run basic simulation.
 ```
