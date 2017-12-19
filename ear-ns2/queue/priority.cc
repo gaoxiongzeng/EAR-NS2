@@ -52,7 +52,7 @@ void Priority::enque(Packet* p)
     (marking_scheme_==PER_PORT_ECN && TotalByteLength()>thresh_*mean_pktsize_) || \
 	(marking_scheme_==PER_PORT_RED && (TotalByteLength()>thresh_max_*mean_pktsize_ || \
 	(TotalByteLength()>thresh_*mean_pktsize_ && ((double)rand()/(double)RAND_MAX) < \
-	p_max_*(TotalByteLength()-thresh_*mean_pktsize_)/(thresh_max_-thresh_)) ) ) )
+	p_max_*(TotalByteLength()-thresh_*mean_pktsize_)/(thresh_max_-thresh_)/mean_pktsize_) ) ) )
     {
         if (hf->ect()) //If this packet is ECN-capable
             hf->ce()=1;
