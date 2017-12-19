@@ -42,5 +42,6 @@ $ python result.py flow.tr
 If you have any question about EAR simulation code, please contact [Gaoxiong Zeng](http://gaoxiongzeng.github.io/).
 
 ## Acknowledgement
-Thank [Wei Bai](http://baiwei0427.github.io/) for sharing [MQ-ECN simulation code](https://github.com/HKUST-SING/MQ-ECN-NS2/).  
+Thank [Wei Bai](http://baiwei0427.github.io/) for sharing [MQ-ECN simulation code](https://github.com/HKUST-SING/MQ-ECN-NS2/).
+
 Thank [Ke Liu](https://github.com/ATCP) for reporting the per-port RED marking bug.
